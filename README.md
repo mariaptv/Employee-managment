@@ -44,6 +44,11 @@ This project uses an in-memory H2 database. No external setup is required. You c
 - **Username**: `sa`
 - **Password**: (leave blank)
 
+![image](https://github.com/user-attachments/assets/890f45d8-4466-4e78-bb44-94e29c1cd3eb)
+
+When clicking "connect":
+![image](https://github.com/user-attachments/assets/b132798f-4968-4df4-b6c2-37d3800c22ef)
+
 ---
 
 ## Running the Application
@@ -90,6 +95,8 @@ The project includes **unit tests** for:
 1. Right-click on the project in the **Package Explorer**.
 2. Select **Run As > JUnit Test**.
 3. This runs all the test cases in the project.
+![image](https://github.com/user-attachments/assets/289253e1-ccc1-4203-af38-bf1db6a69b69)
+
 
 #### Run Specific Test Class:
 1. Navigate to the test class (e.g., `EmployeeServiceTest`).
@@ -103,6 +110,8 @@ The project includes **unit tests** for:
 ```plaintext
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 sec
 ```
+![image](https://github.com/user-attachments/assets/66ff6b7e-4b1d-4374-bf27-896f1f4c8dcf)
+
 ## Testing with cURL or Postman
 You can also manually test the API using tools like **Postman** or **cURL**. Refer to the API endpoints in the **API Endpoints** section below.
 
@@ -141,6 +150,8 @@ http://localhost:8080/employees
   }
 ]
 ```
+![image](https://github.com/user-attachments/assets/b190c2d3-6783-4f1f-8529-226f5e222a96)
+
 ### 2. Get Employee by ID
 
 **Request**:  
@@ -164,6 +175,8 @@ http://localhost:8080/employees
   "status": "Active"
 }
 ```
+![image](https://github.com/user-attachments/assets/d7119304-aa69-4160-9243-0847a556df1d)
+
 ### 3. Create a New Employee
 
 **Request**:  
@@ -190,20 +203,20 @@ http://localhost:8080/employees
 **Response**:
 ```json
 {
-  "id": 1,
-  "firstName": "John",
-  "middleName": "Updated",
-  "lastName": "Doe",
-  "locationCity": "New York",
-  "address": "123 Street",
-  "dateOfBirth": "1990-01-01",
-  "telephone": "1234567890",
-  "positionTitle": "Senior Developer",
-  "hireDate": "2020-01-01",
-  "email": "john.doe@example.com",
-  "salary": 80000.0,
+  "firstName": "Emily",
+  "middleName": "C",
+  "lastName": "Brown",
+  "locationCity": "Los Angeles",
+  "address": "456 Avenue",
+  "dateOfBirth": "1992-03-15",
+  "telephone": "9876543210",
+  "positionTitle": "Designer",
+  "hireDate": "2022-06-01",
+  "email": "emily.brown@example.com",
+  "salary": 70000.0,
   "status": "Active"
 }
 ```
+![image](https://github.com/user-attachments/assets/25f6ff8e-ddc3-45e2-a88f-a2ab0e8ade25)
 
 
