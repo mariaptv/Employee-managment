@@ -102,3 +102,108 @@ The project includes **unit tests** for:
 ### Example Test Output:
 ```plaintext
 Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 sec
+```
+## Testing with cURL or Postman
+You can also manually test the API using tools like **Postman** or **cURL**. Refer to the API endpoints in the **API Endpoints** section below.
+
+---
+
+## API Endpoints
+
+### Base URL
+http://localhost:8080/employees
+
+---
+
+### Endpoints
+
+#### 1. Get All Employees
+**Request**:  
+`GET /employees`
+
+**Response**:
+```json
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "middleName": "A",
+    "lastName": "Doe",
+    "locationCity": "New York",
+    "address": "123 Street",
+    "dateOfBirth": "1990-01-01",
+    "telephone": "1234567890",
+    "positionTitle": "Developer",
+    "hireDate": "2020-01-01",
+    "email": "john.doe@example.com",
+    "salary": 60000.0,
+    "status": "Active"
+  }
+]
+```
+### 2. Get Employee by ID
+
+**Request**:  
+`GET /employees/{id}`
+
+**Response**:
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "middleName": "A",
+  "lastName": "Doe",
+  "locationCity": "New York",
+  "address": "123 Street",
+  "dateOfBirth": "1990-01-01",
+  "telephone": "1234567890",
+  "positionTitle": "Developer",
+  "hireDate": "2020-01-01",
+  "email": "john.doe@example.com",
+  "salary": 60000.0,
+  "status": "Active"
+}
+```
+### 3. Create a New Employee
+
+**Request**:  
+`POST /employees`
+
+**Request Body**:
+```json
+{
+  "firstName": "Emily",
+  "middleName": "C",
+  "lastName": "Brown",
+  "locationCity": "Los Angeles",
+  "address": "456 Avenue",
+  "dateOfBirth": "1992-03-15",
+  "telephone": "9876543210",
+  "positionTitle": "Designer",
+  "hireDate": "2022-06-01",
+  "email": "emily.brown@example.com",
+  "salary": 70000.0,
+  "status": "Active"
+}
+```
+
+**Response**:
+```json
+{
+  "id": 1,
+  "firstName": "John",
+  "middleName": "Updated",
+  "lastName": "Doe",
+  "locationCity": "New York",
+  "address": "123 Street",
+  "dateOfBirth": "1990-01-01",
+  "telephone": "1234567890",
+  "positionTitle": "Senior Developer",
+  "hireDate": "2020-01-01",
+  "email": "john.doe@example.com",
+  "salary": 80000.0,
+  "status": "Active"
+}
+```
+
+
